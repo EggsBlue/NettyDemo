@@ -1,4 +1,4 @@
-package com.demo1;
+package com.demo2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,12 +22,6 @@ public class TimeServerHandler implements Runnable{
 	
 	@Override
 	public void run() {
-//		try {
-//			Thread.sleep(1000);
-//		} catch (InterruptedException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
 		BufferedReader in  = null;
 		PrintWriter out = null;
 		try {
