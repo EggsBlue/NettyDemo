@@ -28,10 +28,10 @@ public class TimeClientHandler extends ChannelHandlerAdapter{
 	
 	//接收到服务端响应的消息时执行
 	public void channelRead(ChannelHandlerContext ctx,Object msg) throws Exception{
-		ByteBuf buf = (ByteBuf) msg;
-		byte[] req = new byte[buf.readableBytes()];
-		buf.readBytes(req);
-		String body = new String(req,"utf-8");
+		String body = (String) msg;
+//		byte[] req = new byte[buf.readableBytes()];
+//		buf.readBytes(req);
+//		String body = new String(req,"utf-8");
 		System.out.println("Now is :"+body+", the conter is :"+ ++counter);
 	}
 	
